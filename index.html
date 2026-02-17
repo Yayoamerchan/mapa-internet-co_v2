@@ -2897,169 +2897,345 @@
         </script>        
     
 <style>
-.map-title-card{position:absolute;top:10px;left:55px;z-index:1001;background:white;
-  padding:7px 14px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.3);
-  border:1px solid #1976D2;pointer-events:none;}
-.map-title-card h2{margin:0;font-size:13px;color:#1976D2;font-family:sans-serif;text-transform:uppercase;}
+/* ── TÍTULO ─────────────────────────────────────────────────────── */
+.map-title-card {
+  position:absolute; top:10px; left:55px; z-index:1001;
+  background:white; padding:7px 14px; border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,.3); border:1px solid #1976D2;
+  pointer-events:none;
+}
+.map-title-card h2 {
+  margin:0; font-size:13px; color:#1976D2;
+  font-family:sans-serif; text-transform:uppercase;
+}
 
-#buscador-wrap{position:absolute;top:10px;right:70px;z-index:1001;background:white;
-  padding:6px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.3);
-  border:1px solid #ddd;display:flex;align-items:center;gap:6px;}
-#input-buscar{border:1px solid #ddd;border-radius:4px;padding:5px 9px;font-size:13px;width:230px;outline:none;}
-#input-buscar:focus{border-color:#1976D2;}
-#btn-clear-b{background:#f5f5f5;border:1px solid #ddd;border-radius:4px;padding:4px 10px;cursor:pointer;font-size:12px;}
-#resultados-b{position:absolute;top:48px;right:70px;z-index:1000;background:white;
-  border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.2);
-  max-width:360px;min-width:280px;max-height:400px;overflow-y:auto;display:none;border:1px solid #ddd;}
-.res-item{padding:9px 12px;border-bottom:1px solid #f0f0f0;cursor:pointer;}
-.res-item:hover{background:#f5f5f5;}
-.res-nombre{font-weight:bold;color:#1976D2;font-size:13px;}
-.res-sub{font-size:11px;color:#666;margin-top:2px;}
+/* ── BUSCADOR ────────────────────────────────────────────────────── */
+#buscador-wrap {
+  position:absolute; top:10px; right:70px; z-index:1001;
+  background:white; padding:6px 10px; border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,.3); border:1px solid #ddd;
+  display:flex; align-items:center; gap:6px;
+}
+#input-buscar {
+  border:1px solid #ddd; border-radius:4px; padding:5px 9px;
+  font-size:13px; width:230px; outline:none;
+}
+#input-buscar:focus { border-color:#1976D2; }
+#btn-clear-b {
+  background:#f5f5f5; border:1px solid #ddd; border-radius:4px;
+  padding:4px 10px; cursor:pointer; font-size:12px;
+}
+#resultados-b {
+  position:absolute; top:48px; right:70px; z-index:1000;
+  background:white; border-radius:8px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+  max-width:360px; min-width:280px; max-height:400px;
+  overflow-y:auto; display:none; border:1px solid #ddd;
+}
+.res-item { padding:9px 12px; border-bottom:1px solid #f0f0f0; cursor:pointer; }
+.res-item:hover { background:#f5f5f5; }
+.res-nombre { font-weight:bold; color:#1976D2; font-size:13px; }
+.res-sub    { font-size:11px; color:#666; margin-top:2px; }
 
-#toggle-filtros{position:absolute;bottom:20px;right:20px;z-index:1002;background:#1976D2;
-  color:white;border:none;border-radius:50%;width:48px;height:48px;cursor:pointer;font-size:20px;
-  box-shadow:0 2px 10px rgba(0,0,0,.4);}
+/* ── BOTÓN TOGGLE FILTROS ────────────────────────────────────────── */
+#toggle-filtros {
+  position:absolute; bottom:20px; right:20px; z-index:1002;
+  background:#1976D2; color:white; border:none; border-radius:50%;
+  width:48px; height:48px; cursor:pointer; font-size:20px;
+  box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
 
-#filtros-panel{position:absolute;bottom:78px;right:20px;background:white;padding:14px;
-  border-radius:12px;box-shadow:0 2px 20px rgba(0,0,0,.2);z-index:1000;width:270px;
-  max-height:calc(100vh - 130px);overflow-y:auto;font-family:sans-serif;border:1px solid #ccc;
-  transition:transform .3s,opacity .3s;}
-#filtros-panel.oculto{transform:translateY(20px);opacity:0;pointer-events:none;}
-.f-titulo{font-size:11px;font-weight:bold;color:#888;text-transform:uppercase;margin:10px 0 5px;}
-.f-seccion{border-bottom:1px solid #eee;padding-bottom:8px;}
-.f-item{display:flex;align-items:center;font-size:12px;margin-bottom:4px;cursor:pointer;padding:2px 4px;border-radius:3px;}
-.f-item:hover{background:#f5f5f5;}
-.f-item input{margin-right:7px;cursor:pointer;}
-#btn-aplicar{width:100%;margin-top:10px;cursor:pointer;background:#1976D2;color:white;
-  border:none;padding:9px;border-radius:6px;font-weight:bold;}
-#btn-aplicar:hover{background:#1565C0;}
-#div-contador{font-size:11px;margin-top:8px;text-align:center;border-top:1px solid #eee;padding-top:7px;color:#666;}
+/* ── PANEL FILTROS ───────────────────────────────────────────────── */
+#filtros-panel {
+  position:absolute; bottom:78px; right:20px; background:white;
+  padding:14px; border-radius:12px;
+  box-shadow:0 2px 20px rgba(0,0,0,.2); z-index:1000; width:270px;
+  max-height:calc(100vh - 130px); overflow-y:auto;
+  font-family:sans-serif; border:1px solid #ccc;
+  transition:transform .3s, opacity .3s;
+}
+#filtros-panel.oculto { transform:translateY(20px); opacity:0; pointer-events:none; }
 
-/* POPUP */
-.leaflet-popup-content-wrapper{padding:0;overflow:hidden;border-radius:10px;
-  min-width:340px!important;max-width:360px!important;}
-.leaflet-popup-content{margin:0!important;
-  min-width:340px!important;max-width:360px!important;max-height:600px;overflow-y:auto;}
+.f-titulo {
+  font-size:11px; font-weight:bold; color:#888;
+  text-transform:uppercase; margin:10px 0 5px;
+}
+.f-titulo:first-child { margin-top:0; }
+.f-seccion { border-bottom:1px solid #eee; padding-bottom:8px; }
 
+/* Sección departamento: scroll propio para no alargar demasiado el panel */
+.f-seccion-scroll {
+  border-bottom:1px solid #eee; padding-bottom:8px;
+}
+.f-scroll-inner {
+  max-height:160px; overflow-y:auto; padding-right:4px;
+}
+
+.f-item {
+  display:flex; align-items:center; font-size:12px;
+  margin-bottom:4px; cursor:pointer; padding:2px 4px; border-radius:3px;
+}
+.f-item:hover { background:#f5f5f5; }
+.f-item input { margin-right:7px; cursor:pointer; }
+
+#btn-aplicar {
+  width:100%; margin-top:10px; cursor:pointer;
+  background:#1976D2; color:white; border:none;
+  padding:9px; border-radius:6px; font-weight:bold;
+}
+#btn-aplicar:hover { background:#1565C0; }
+#div-contador {
+  font-size:11px; margin-top:8px; text-align:center;
+  border-top:1px solid #eee; padding-top:7px; color:#666;
+}
+
+/* ── PANEL RESUMEN INFERIOR IZQUIERDO ────────────────────────────── */
+#resumen-panel {
+  position:absolute; bottom:20px; left:20px; z-index:1001;
+  background:white; border-radius:10px;
+  box-shadow:0 2px 12px rgba(0,0,0,.25); border:1px solid #e0e0e0;
+  font-family:sans-serif; font-size:12px; min-width:220px;
+  overflow:hidden;
+}
+#resumen-header {
+  background:linear-gradient(135deg,#1565C0,#1976D2);
+  color:white; padding:8px 12px; font-weight:bold; font-size:12px;
+}
+#resumen-body { padding:10px 12px; }
+.r-fila {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:4px 0; border-bottom:1px solid #f5f5f5;
+}
+.r-fila:last-child { border-bottom:none; }
+.r-label { color:#555; }
+.r-valor { font-weight:bold; color:#1976D2; }
+#resumen-nota {
+  font-size:10px; color:#999; text-align:center;
+  padding:5px 12px 8px; border-top:1px solid #f0f0f0;
+  font-style:italic;
+}
+
+/* ── POPUPS ──────────────────────────────────────────────────────── */
+.leaflet-popup-content-wrapper {
+  padding:0; overflow:hidden; border-radius:10px;
+  min-width:340px!important; max-width:360px!important;
+}
+.leaflet-popup-content {
+  margin:0!important;
+  min-width:340px!important; max-width:360px!important;
+  max-height:600px; overflow-y:auto;
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
 @media(max-width:600px){
-  .map-title-card{left:10px;width:calc(100% - 130px);padding:4px 8px;}
-  .map-title-card h2{font-size:10px;}
-  #buscador-wrap{right:10px;left:10px;top:50px;width:auto;}
-  #input-buscar{width:100%;}
-  #resultados-b{right:10px;left:10px;max-width:none;}
-  #filtros-panel{width:calc(100% - 50px);right:25px;bottom:80px;}
-  .leaflet-popup-content-wrapper,.leaflet-popup-content{min-width:300px!important;max-width:320px!important;}
+  .map-title-card { left:10px; width:calc(100% - 130px); padding:4px 8px; }
+  .map-title-card h2 { font-size:10px; }
+  #buscador-wrap { right:10px; left:10px; top:50px; width:auto; }
+  #input-buscar  { width:100%; }
+  #resultados-b  { right:10px; left:10px; max-width:none; }
+  #filtros-panel { width:calc(100% - 50px); right:25px; bottom:80px; }
+  #resumen-panel { left:10px; bottom:80px; min-width:180px; }
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-content { min-width:300px!important; max-width:320px!important; }
 }
 </style>
 
-<div class="map-title-card"><h2>📊 Análisis de Internet · Colombia Versión 2</h2></div>
+<!-- TÍTULO -->
+<div class="map-title-card">
+  <h2>📊 Análisis de Internet · Colombia Versión 2</h2>
+</div>
 
+<!-- BUSCADOR -->
 <div id="buscador-wrap">
-  <input id="input-buscar" type="text" placeholder="Buscar municipio, departamento o empresa…"/>
+  <input id="input-buscar" type="text"
+         placeholder="Buscar municipio, departamento o empresa…"/>
   <button id="btn-clear-b" title="Limpiar">✖</button>
 </div>
 <div id="resultados-b"></div>
 
+<!-- BOTÓN FILTROS -->
 <button id="toggle-filtros" title="Filtros">🔍</button>
 
+<!-- PANEL FILTROS -->
 <div id="filtros-panel" class="oculto">
-  <div style="font-size:14px;font-weight:bold;color:#1976D2;text-align:center;margin-bottom:10px;">
+  <div style="font-size:14px;font-weight:bold;color:#1976D2;
+              text-align:center;margin-bottom:10px;">
     🔍 Filtrar Municipios
   </div>
   <div id="filtros-contenido">
-    <div style="font-size:12px;color:#999;text-align:center;padding:10px;">Cargando…</div>
+    <div style="font-size:12px;color:#999;text-align:center;padding:10px;">
+      Cargando…
+    </div>
   </div>
   <button id="btn-aplicar">ACTUALIZAR VISTA</button>
-  <div id="div-contador">Visibles: <span id="num-visible" style="font-weight:bold;color:#1976D2;">0</span></div>
+  <div id="div-contador">
+    Visibles:
+    <span id="num-visible" style="font-weight:bold;color:#1976D2;">0</span>
+  </div>
+</div>
+
+<!-- PANEL RESUMEN -->
+<div id="resumen-panel">
+  <div id="resumen-header">📊 Resumen de municipios visibles</div>
+  <div id="resumen-body">
+    <div class="r-fila">
+      <span class="r-label">🏙️ Municipios</span>
+      <span class="r-valor" id="r-municipios">–</span>
+    </div>
+    <div class="r-fila">
+      <span class="r-label">🏢 Empresas únicas</span>
+      <span class="r-valor" id="r-empresas">–</span>
+    </div>
+    <div class="r-fila">
+      <span class="r-label">📶 Total accesos</span>
+      <span class="r-valor" id="r-accesos">–</span>
+    </div>
+    <div class="r-fila">
+      <span class="r-label">🔷 Accesos FTTH</span>
+      <span class="r-valor" id="r-ftth">–</span>
+    </div>
+    <div class="r-fila">
+      <span class="r-label">🔷 % Fibra prom.</span>
+      <span class="r-valor" id="r-fibra">–</span>
+    </div>
+    <div class="r-fila">
+      <span class="r-label">⬇️ Vel. bajada prom.</span>
+      <span class="r-valor" id="r-veldown">–</span>
+    </div>
+    <div class="r-fila">
+      <span class="r-label">⏱️ Latencia prom.</span>
+      <span class="r-valor" id="r-latencia">–</span>
+    </div>
+  </div>
+  <div id="resumen-nota">Se actualiza con los filtros activos</div>
 </div>
 
 <script id="mejora-script">
 (function(){
 
-// Lista simplificada según requerimiento: Solo Rango, Tipo, Categoría y Plaza
+/* =======================================================================
+   SECCIONES DE FILTROS
+   Cada sección lee columnas Num_<PREFIJO>_<sufijo_exacto> del GeoJSON.
+   El checkbox guarda el sufijo exacto → búsqueda directa sin reconstruir.
+   ======================================================================= */
 var SECCIONES = [
-  {prefijo:'Num_RANGO_',   clase:'chk-rango',   label:'📏 Por Rango de Tamaño'},
-  {prefijo:'Num_TIPO_',    clase:'chk-tipo',    label:'🏢 Por Tipo de Empresa'},
-  {prefijo:'Num_CAT_',     clase:'chk-cat',     label:'⭐ Por Categoría'},
-  {prefijo:'Num_PLAZA_',   clase:'chk-plaza',   label:'🏙️ Por Plaza'}
+  { prefijo:'Num_RANGO_',  clase:'chk-rango', label:'📏 Por Rango de Tamaño', scroll:false },
+  { prefijo:'Num_TIPO_',   clase:'chk-tipo',  label:'🏢 Por Tipo de Empresa',  scroll:false },
+  { prefijo:'Num_CAT_',    clase:'chk-cat',   label:'⭐ Por Categoría',         scroll:false },
+  { prefijo:'Num_PLAZA_',  clase:'chk-plaza', label:'🏙️ Por Plaza',            scroll:false },
+  { prefijo:'Num_DEPTO_',  clase:'chk-depto', label:'🗺️ Por Departamento',    scroll:true  },
 ];
+
+/* Formatea números grandes: 1234567 → "1.234.567" */
+function fmtNum(n){
+  return Math.round(n).toLocaleString('es-CO');
+}
 
 function init(){
   var capa = window['layer_CantAccesosyCalidadcant_accesos_y_calidad_1'];
-  if(!capa){ setTimeout(init,500); return; }
+  if(!capa){ setTimeout(init, 500); return; }
+  console.log('✓ mapa clusters v2.3');
 
-  /* ── 1. ÍNDICE PARA BUSCADOR ── */
-  var indice = [];
+  /* ── 1. ÍNDICE GLOBAL ───────────────────────────────────────────── */
+  var indice = [];   // para buscador y resumen
+
   capa.eachLayer(function(l){
     if(!l.feature) return;
     var p = l.feature.properties;
+
+    // Extraer nombres de empresa del HTML del popup
     var empresas = [];
     var re = /font-weight:bold[^>]*>\s*[🔴🟠🟡🟢🔵⚪🟣⚫]\s*([^<]+)</g, m;
-    var popH = p['Popup_HTML']||'';
-    while((m=re.exec(popH))!==null){ var n=m[1].trim(); if(n) empresas.push(n); }
+    var popH = p['Popup_HTML'] || '';
+    while((m = re.exec(popH)) !== null){
+      var n = m[1].trim(); if(n) empresas.push(n);
+    }
+
     indice.push({
-      mun:   (p['MUNICIPIO']   ||'').toUpperCase(),
-      dep:   (p['DEPARTAMENTO']||'').toUpperCase(),
-      plaza: (p['Plaza']||p['PLAZA']||'').toUpperCase(),
+      mun:   (p['MUNICIPIO']    || '').toUpperCase(),
+      dep:   (p['DEPARTAMENTO'] || '').toUpperCase(),
+      plaza: (p['Plaza'] || p['PLAZA'] || '').toUpperCase(),
       emps:  empresas,
-      layer: l, props:p
+      layer: l,
+      props: p,
+      visible: true,
     });
   });
 
-  /* ── 2. BIND POPUP + HOVER ── */
+  /* ── 2. POPUPS + HOVER ──────────────────────────────────────────── */
   capa.eachLayer(function(l){
     if(!l.feature) return;
     var p = l.feature.properties;
-    var plaza = p['Plaza']||p['PLAZA']||'N/A';
-    var html = (p['Popup_HTML']||'<p>Sin datos</p>')
-               .replace('N/A (dato del shapefile)', plaza)
-               .replace('{Plaza}', plaza);
-    l.bindPopup(html,{maxWidth:360,minWidth:340});
-    l.on('mouseover',function(){ if(this.options.interactive) this.setStyle({color:'#FFD700',weight:3,fillOpacity:.85}); });
+    var plaza = p['Plaza'] || p['PLAZA'] || 'N/A';
+    var html  = (p['Popup_HTML'] || '<p>Sin datos</p>')
+                  .replace('N/A (dato del shapefile)', plaza)
+                  .replace('{Plaza}', plaza);
+    l.bindPopup(html, { maxWidth:360, minWidth:340 });
+    l.on('mouseover', function(){
+      if(this.options.interactive)
+        this.setStyle({ color:'#FFD700', weight:3, fillOpacity:.85 });
+    });
     l.on('mouseout', function(){ capa.resetStyle(this); });
   });
 
-  /* ── 3. CONSTRUIR PANEL DE FILTROS ── */
+  /* ── 3. CONSTRUIR PANEL DE FILTROS DINÁMICO ─────────────────────── */
+  /*
+     Lee todos los features para descubrir qué sufijos existen en cada
+     sección. Solo muestra valores que tienen al menos 1 municipio.
+  */
   var sufijos = {};
-  SECCIONES.forEach(function(s){ sufijos[s.prefijo]=new Set(); });
+  SECCIONES.forEach(function(s){ sufijos[s.prefijo] = new Set(); });
 
   indice.forEach(function(item){
     SECCIONES.forEach(function(s){
       Object.keys(item.props).forEach(function(k){
-        if(k.startsWith(s.prefijo) && item.props[k]>0){
+        if(k.startsWith(s.prefijo) && item.props[k] > 0)
           sufijos[s.prefijo].add(k.slice(s.prefijo.length));
-        }
       });
     });
   });
 
-  var panelHTML='';
+  var panelHTML = '';
   SECCIONES.forEach(function(s){
     var vals = Array.from(sufijos[s.prefijo]).sort();
     if(!vals.length) return;
-    panelHTML += '<div class="f-seccion"><div class="f-titulo">'+s.label+'</div>';
-    panelHTML += '<label class="f-item"><input type="checkbox" class="'+s.clase+'" value="__todos__" checked><b>Todos</b></label>';
+
+    var wrapperTag   = s.scroll ? 'f-seccion-scroll' : 'f-seccion';
+    var innerOpenTag = s.scroll
+      ? '<div class="f-scroll-inner">'
+      : '';
+    var innerCloseTag = s.scroll ? '</div>' : '';
+
+    panelHTML += '<div class="' + wrapperTag + '">';
+    panelHTML += '<div class="f-titulo">' + s.label + '</div>';
+    panelHTML += innerOpenTag;
+    panelHTML +=
+      '<label class="f-item">' +
+      '<input type="checkbox" class="' + s.clase + '" value="__todos__" checked>' +
+      '<b>Todos</b></label>';
     vals.forEach(function(v){
-      var lbl = v.replace(/_/g,' ');
-      panelHTML += '<label class="f-item"><input type="checkbox" class="'+s.clase+'" value="'+v+'"> '+lbl+'</label>';
+      var lbl = v.replace(/_/g, ' ');
+      panelHTML +=
+        '<label class="f-item">' +
+        '<input type="checkbox" class="' + s.clase + '" value="' + v + '"> ' +
+        lbl + '</label>';
     });
-    panelHTML += '</div>';
+    panelHTML += innerCloseTag + '</div>';
   });
   document.getElementById('filtros-contenido').innerHTML = panelHTML;
 
-  /* ── 4. TOGGLE FILTROS ── */
+  /* ── 4. TOGGLE FILTROS ──────────────────────────────────────────── */
   var btnT  = document.getElementById('toggle-filtros');
   var panel = document.getElementById('filtros-panel');
-  
+
   btnT.onclick = function(e){
-    e.stopPropagation(); // Evita que el click se propague al document
+    e.stopPropagation();
     panel.classList.toggle('oculto');
-    btnT.innerText = panel.classList.contains('oculto')? '🔍':'✖';
+    btnT.innerText = panel.classList.contains('oculto') ? '🔍' : '✖';
   };
 
-  /* ── 5. CERRAR AL CLICKEAR FUERA ── */
+  /* ── 5. CERRAR PANEL AL CLICKEAR FUERA ─────────────────────────── */
   document.addEventListener('click', function(e){
-    // Si el panel no está oculto y el click no fue dentro del panel ni del botón toggle
     if(!panel.classList.contains('oculto')){
       if(!panel.contains(e.target) && e.target !== btnT){
         panel.classList.add('oculto');
@@ -3068,109 +3244,182 @@ function init(){
     }
   });
 
-  /* ── 6. LÓGICA CHECKBOX ── */
+  /* ── 6. LÓGICA DE CHECKBOXES ────────────────────────────────────── */
   function bindGroup(clase){
-    var cbTodos = document.querySelector('.'+clase+'[value="__todos__"]');
-    var cbInds  = document.querySelectorAll('.'+clase+':not([value="__todos__"])');
+    var cbTodos = document.querySelector('.' + clase + '[value="__todos__"]');
+    var cbInds  = document.querySelectorAll('.' + clase + ':not([value="__todos__"])');
     if(cbTodos) cbTodos.onchange = function(){
-      if(this.checked) cbInds.forEach(function(c){c.checked=false;});
+      if(this.checked) cbInds.forEach(function(c){ c.checked = false; });
     };
     cbInds.forEach(function(cb){
       cb.onchange = function(){
-        if(this.checked && cbTodos) cbTodos.checked=false;
-        var hayAlguno = Array.from(cbInds).some(function(c){return c.checked;});
-        if(!hayAlguno && cbTodos) cbTodos.checked=true;
+        if(this.checked && cbTodos) cbTodos.checked = false;
+        var hay = Array.from(cbInds).some(function(c){ return c.checked; });
+        if(!hay && cbTodos) cbTodos.checked = true;
       };
     });
   }
   SECCIONES.forEach(function(s){ bindGroup(s.clase); });
 
-  /* ── 7. APLICAR FILTROS ── */
+  /* ── 7. FUNCIÓN OBTENER SELECCIONADOS ───────────────────────────── */
   function seleccionados(clase){
-    var cbTodos = document.querySelector('.'+clase+'[value="__todos__"]');
-    if(cbTodos && cbTodos.checked) return null;
-    var r=[];
-    document.querySelectorAll('.'+clase+':checked').forEach(function(c){r.push(c.value);});
-    return r.length? r : null;
+    var cbTodos = document.querySelector('.' + clase + '[value="__todos__"]');
+    if(cbTodos && cbTodos.checked) return null;   // null = sin filtro
+    var r = [];
+    document.querySelectorAll('.' + clase + ':checked')
+      .forEach(function(c){ r.push(c.value); });
+    return r.length ? r : null;
   }
 
+  /* ── 8. APLICAR FILTROS + ACTUALIZAR RESUMEN ────────────────────── */
   function aplicar(){
     var filtros = SECCIONES.map(function(s){
-      return {prefijo:s.prefijo, valores:seleccionados(s.clase)};
+      return { prefijo: s.prefijo, valores: seleccionados(s.clase) };
     });
-    var cnt=0;
+
+    // Acumuladores para el panel resumen
+    var cntMun     = 0;
+    var setEmps    = new Set();
+    var sumAcc     = 0;
+    var sumFtth    = 0;
+    var sumFibra   = 0;      // para promedio de Porc_Fibra
+    var sumVelDown = 0;
+    var sumLat     = 0;
+    var cntLat     = 0;      // solo municipios con latencia
+
     capa.eachLayer(function(l){
       if(!l.feature) return;
-      var p=l.feature.properties, mostrar=true;
+      var p = l.feature.properties;
+      var mostrar = true;
+
       filtros.forEach(function(f){
-        if(!mostrar||!f.valores) return;
+        if(!mostrar || !f.valores) return;
         var cumple = f.valores.some(function(v){
-          return (p[f.prefijo+v]||0)>0;
+          return (p[f.prefijo + v] || 0) > 0;
         });
-        if(!cumple) mostrar=false;
+        if(!cumple) mostrar = false;
       });
+
       if(mostrar){
-        l.setStyle({fillOpacity:.7,opacity:1,stroke:true});
-        l.options.interactive=true;
-        if(l.getElement()){l.getElement().style.display='';l.getElement().style.pointerEvents='';}
-        cnt++;
+        l.setStyle({ fillOpacity:.7, opacity:1, stroke:true });
+        l.options.interactive = true;
+        if(l.getElement()){
+          l.getElement().style.display       = '';
+          l.getElement().style.pointerEvents = '';
+        }
+        // Acumular métricas
+        cntMun++;
+        sumAcc     += (p['Accesos_Totales']   || 0);
+        sumFtth    += (p['Accesos_Fibra']     || 0);
+        sumFibra   += (p['Porc_Fibra']        || 0);
+        sumVelDown += (p['Vel_Down_Promedio'] || 0);
+        var lat     = parseFloat(p['Latencia_Promedio']);
+        if(!isNaN(lat)){ sumLat += lat; cntLat++; }
+        // Empresas únicas: leer Empresa_Lider como proxy rápido
+        // (el campo exacto de empresas no está disponible directamente)
+        var emp = p['Empresa_Lider'];
+        if(emp) setEmps.add(emp);
       } else {
-        l.setStyle({fillOpacity:0,opacity:0,stroke:false});
-        l.options.interactive=false;
-        if(l.getElement()){l.getElement().style.display='none';l.getElement().style.pointerEvents='none';}
+        l.setStyle({ fillOpacity:0, opacity:0, stroke:false });
+        l.options.interactive = false;
+        if(l.getElement()){
+          l.getElement().style.display       = 'none';
+          l.getElement().style.pointerEvents = 'none';
+        }
       }
     });
-    document.getElementById('num-visible').innerText=cnt;
-    if(window.innerWidth<600) panel.classList.add('oculto');
+
+    // Actualizar contador del panel filtros
+    document.getElementById('num-visible').innerText = cntMun;
+
+    // Actualizar panel resumen
+    document.getElementById('r-municipios').innerText = cntMun;
+    document.getElementById('r-empresas').innerText   = setEmps.size + ' líd.';
+    document.getElementById('r-accesos').innerText    = fmtNum(sumAcc);
+    document.getElementById('r-ftth').innerText       = fmtNum(sumFtth);
+    document.getElementById('r-fibra').innerText      =
+      cntMun ? (sumFibra / cntMun).toFixed(1) + '%' : '–';
+    document.getElementById('r-veldown').innerText    =
+      cntMun ? (sumVelDown / cntMun).toFixed(1) + ' Mbps' : '–';
+    document.getElementById('r-latencia').innerText   =
+      cntLat ? (sumLat / cntLat).toFixed(1) + ' ms' : 'N/D';
+
+    // Auto-cerrar panel en móvil
+    if(window.innerWidth < 600) panel.classList.add('oculto');
   }
+
   document.getElementById('btn-aplicar').onclick = aplicar;
-  aplicar();
+  aplicar();  // ejecutar al cargar con filtros por defecto (todos visibles)
 
-  /* ── 8. BUSCADOR ── */
-  var inputB  = document.getElementById('input-buscar');
-  var divRes  = document.getElementById('resultados-b');
-  var btnClr  = document.getElementById('btn-clear-b');
+  /* ── 9. BUSCADOR ─────────────────────────────────────────────────── */
+  var inputB = document.getElementById('input-buscar');
+  var divRes = document.getElementById('resultados-b');
+  var btnClr = document.getElementById('btn-clear-b');
 
-  inputB.addEventListener('input',function(){
-    var q=this.value.trim().toUpperCase();
-    if(q.length<2){divRes.style.display='none';return;}
+  inputB.addEventListener('input', function(){
+    var q = this.value.trim().toUpperCase();
+    if(q.length < 2){ divRes.style.display = 'none'; return; }
+
     var res = indice.filter(function(item){
-      return item.mun.includes(q)||item.dep.includes(q)||
-             item.plaza.includes(q)||item.emps.some(function(e){return e.toUpperCase().includes(q);});
-    }).slice(0,12);
+      return item.mun.includes(q)   ||
+             item.dep.includes(q)   ||
+             item.plaza.includes(q) ||
+             item.emps.some(function(e){ return e.toUpperCase().includes(q); });
+    }).slice(0, 12);
 
     if(!res.length){
-      divRes.innerHTML='<div class="res-item"><div class="res-nombre" style="color:#999">Sin resultados</div></div>';
-      divRes.style.display='block'; return;
+      divRes.innerHTML =
+        '<div class="res-item">' +
+        '<div class="res-nombre" style="color:#999">Sin resultados</div></div>';
+      divRes.style.display = 'block';
+      return;
     }
-    var html='';
-    res.forEach(function(item,i){
-      var empsMatch=item.emps.filter(function(e){return e.toUpperCase().includes(q);});
-      var sub=item.dep+(item.plaza?' · Plaza: '+item.plaza:'');
-      if(empsMatch.length) sub+=' | 🏢 '+empsMatch.slice(0,2).join(', ')+(empsMatch.length>2?' +'+( empsMatch.length-2)+'…':'');
-      html+='<div class="res-item" data-i="'+i+'"><div class="res-nombre">'+item.mun+'</div><div class="res-sub">'+sub+'</div></div>';
+
+    var html = '';
+    res.forEach(function(item, i){
+      var empsMatch = item.emps.filter(function(e){
+        return e.toUpperCase().includes(q);
+      });
+      var sub = item.dep + (item.plaza ? ' · Plaza: ' + item.plaza : '');
+      if(empsMatch.length)
+        sub += ' | 🏢 ' + empsMatch.slice(0, 2).join(', ') +
+               (empsMatch.length > 2 ? ' +' + (empsMatch.length - 2) + '…' : '');
+      html +=
+        '<div class="res-item" data-i="' + i + '">' +
+        '<div class="res-nombre">' + item.mun + '</div>' +
+        '<div class="res-sub">'   + sub       + '</div></div>';
     });
-    divRes.innerHTML=html; divRes.style.display='block';
+    divRes.innerHTML    = html;
+    divRes.style.display = 'block';
 
     divRes.querySelectorAll('.res-item').forEach(function(el){
-      el.onclick=function(){
-        var i=parseInt(this.getAttribute('data-i'));
-        var tgt=res[i].layer;
-        map.fitBounds(tgt.getBounds(),{maxZoom:12});
-        setTimeout(function(){tgt.openPopup();},600);
-        tgt.setStyle({color:'#FFD700',weight:4,fillOpacity:.9});
-        setTimeout(function(){capa.resetStyle(tgt);},2500);
-        divRes.style.display='none';
-        inputB.value=res[i].mun+', '+res[i].dep;
+      el.onclick = function(){
+        var i   = parseInt(this.getAttribute('data-i'));
+        var tgt = res[i].layer;
+        map.fitBounds(tgt.getBounds(), { maxZoom:12 });
+        setTimeout(function(){ tgt.openPopup(); }, 600);
+        tgt.setStyle({ color:'#FFD700', weight:4, fillOpacity:.9 });
+        setTimeout(function(){ capa.resetStyle(tgt); }, 2500);
+        divRes.style.display = 'none';
+        inputB.value = res[i].mun + ', ' + res[i].dep;
       };
     });
   });
 
-  // El click global de cerrar filtros arriba también sirve para ocultar buscador
-  btnClr.onclick=function(){inputB.value='';divRes.style.display='none';inputB.focus();};
+  // Cerrar resultados al clickear fuera
+  document.addEventListener('click', function(e){
+    if(!inputB.contains(e.target) && !divRes.contains(e.target))
+      divRes.style.display = 'none';
+  });
+
+  btnClr.onclick = function(){
+    inputB.value = '';
+    divRes.style.display = 'none';
+    inputB.focus();
+  };
 }
 
-window.addEventListener('load',function(){setTimeout(init,1200);});
+window.addEventListener('load', function(){ setTimeout(init, 1200); });
 })();
 </script>
 </body>
