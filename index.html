@@ -35,7 +35,7 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet.photon.js"></script>
-        <script src="data/CantAccesosyCalidadcant_accesos_y_calidad_1.js"></script>
+        <script src="data/AccesosporcluesterNET_1.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -136,7 +136,7 @@
         });
         layer_GoogleMaps_0;
         map.addLayer(layer_GoogleMaps_0);
-        function pop_CantAccesosyCalidadcant_accesos_y_calidad_1(feature, layer) {
+        function pop_AccesosporcluesterNET_1(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -222,21 +222,6 @@
                         <td colspan="2">' + (feature.properties['Cluster_Lider'] !== null ? autolinker.link(String(feature.properties['Cluster_Lider']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_RANGO_Mas_de_100K'] !== null ? autolinker.link(String(feature.properties['Num_RANGO_Mas_de_100K']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_RANGO_Mas_de_2k_Menos_10K'] !== null ? autolinker.link(String(feature.properties['Num_RANGO_Mas_de_2k_Menos_10K']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_RANGO_Mas_de_50K_menos_de_100k'] !== null ? autolinker.link(String(feature.properties['Num_RANGO_Mas_de_50K_menos_de_100k']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_RANGO_Menos_de_2K'] !== null ? autolinker.link(String(feature.properties['Num_RANGO_Menos_de_2K']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_RANGO_mas_de_10K_menos_de_50K'] !== null ? autolinker.link(String(feature.properties['Num_RANGO_mas_de_10K_menos_de_50K']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['Num_TIPO_ESTATALES'] !== null ? autolinker.link(String(feature.properties['Num_TIPO_ESTATALES']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -258,457 +243,22 @@
                         <td colspan="2">' + (feature.properties['Num_TIPO_LIDER_B'] !== null ? autolinker.link(String(feature.properties['Num_TIPO_LIDER_B']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CAT_A'] !== null ? autolinker.link(String(feature.properties['Num_CAT_A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Num_TEC_FTTH'] !== null ? autolinker.link(String(feature.properties['Num_TEC_FTTH']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CAT_B'] !== null ? autolinker.link(String(feature.properties['Num_CAT_B']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Num_TEC_HFC'] !== null ? autolinker.link(String(feature.properties['Num_TEC_HFC']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CAT_C'] !== null ? autolinker.link(String(feature.properties['Num_CAT_C']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Num_TEC_OTRAS'] !== null ? autolinker.link(String(feature.properties['Num_TEC_OTRAS']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CAT_D'] !== null ? autolinker.link(String(feature.properties['Num_CAT_D']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Num_SEG2_Corporativo'] !== null ? autolinker.link(String(feature.properties['Num_SEG2_Corporativo']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CAT_E'] !== null ? autolinker.link(String(feature.properties['Num_CAT_E']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Num_SEG2_Otro'] !== null ? autolinker.link(String(feature.properties['Num_SEG2_Otro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_AMAZONAS_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_AMAZONAS_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Bajo_Cauca'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Bajo_Cauca']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Magdalena_Medio'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Magdalena_Medio']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Nordeste'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Nordeste']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Suroeste'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Suroeste']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Urabá'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Urabá']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ANTIOQUIA_Valle_de_Aburrá'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ANTIOQUIA_Valle_de_Aburrá']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ARAUCA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ARAUCA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ARCHIPIÉLAGO_DE_SAN_ANDRÉS,_PROVIDENCIA_Y_SANTA_CATALINA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ARCHIPIÉLAGO_DE_SAN_ANDRÉS,_PROVIDENCIA_Y_SANTA_CATALINA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ATLÁNTICO_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ATLÁNTICO_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ATLÁNTICO_Costera'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ATLÁNTICO_Costera']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ATLÁNTICO_Metropolitana'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ATLÁNTICO_Metropolitana']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ATLÁNTICO_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ATLÁNTICO_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_ATLÁNTICO_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_ATLÁNTICO_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOGOTÁ_D.C._Bogotá_D.C.'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOGOTÁ_D.C._Bogotá_D.C.']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_Dique'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_Dique']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_Isla_de_Mompox'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_Isla_de_Mompox']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_La_Mojana'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_La_Mojana']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_Loba'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_Loba']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_Magdalena_Medio'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_Magdalena_Medio']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_Montes_de_María'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_Montes_de_María']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOLÍVAR_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOLÍVAR_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Gutiérrez'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Gutiérrez']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_La_Libertad'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_La_Libertad']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Lengupá'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Lengupá']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Márquez'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Márquez']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Neira'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Neira']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Ricaurte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Ricaurte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Sugamuxi'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Sugamuxi']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Tundama'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Tundama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_BOYACÁ_Valderrama'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_BOYACÁ_Valderrama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CALDAS_Alto_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CALDAS_Alto_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CALDAS_Alto_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CALDAS_Alto_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CALDAS_Bajo_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CALDAS_Bajo_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CALDAS_Centro_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CALDAS_Centro_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CALDAS_Magdalena_Caldense'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CALDAS_Magdalena_Caldense']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CALDAS_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CALDAS_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAQUETA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAQUETA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CASANARE_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CASANARE_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Bota_Caucana'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Bota_Caucana']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Macizo'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Macizo']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CAUCA_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CAUCA_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CESAR_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CESAR_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CHOCÓ_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CHOCÓ_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Almeidas'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Almeidas']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Alto_Magdalena'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Alto_Magdalena']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Bajo_Magdalena'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Bajo_Magdalena']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Gualivá'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Gualivá']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Guavio'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Guavio']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Magdalena_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Magdalena_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Medina'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Medina']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Rionegro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Rionegro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Sabana_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Sabana_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Sabana_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Sabana_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Soacha'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Soacha']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Sumapaz'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Sumapaz']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Tequendama'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Tequendama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CUNDINAMARCA_Ubaté'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CUNDINAMARCA_Ubaté']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CÓRDOBA_Alto_Sinú'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CÓRDOBA_Alto_Sinú']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CÓRDOBA_Bajo_Sinú'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CÓRDOBA_Bajo_Sinú']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CÓRDOBA_Costanera'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CÓRDOBA_Costanera']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CÓRDOBA_Medio_Sinú'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CÓRDOBA_Medio_Sinú']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CÓRDOBA_Sabanas'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CÓRDOBA_Sabanas']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_CÓRDOBA_San_Jorge'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_CÓRDOBA_San_Jorge']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_GUAINÍA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_GUAINÍA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_GUAVIARE_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_GUAVIARE_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_HUILA_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_HUILA_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_HUILA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_HUILA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_HUILA_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_HUILA_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_HUILA_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_HUILA_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_HUILA_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_HUILA_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_LA_GUAJIRA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_LA_GUAJIRA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_MAGDALENA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_MAGDALENA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_META_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_META_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Guambuyaco'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Guambuyaco']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Juanambu'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Juanambu']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_La_Cordillera'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_La_Cordillera']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_La_Sabana'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_La_Sabana']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Los_Abades'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Los_Abades']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Obando'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Obando']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Occidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Occidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Pacifico_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Pacifico_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Piedemonte_Costero'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Piedemonte_Costero']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Rio_Mayo'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Rio_Mayo']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Sanquianga'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Sanquianga']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NARIÑO_Telembi'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NARIÑO_Telembi']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Norte_Catatumbo'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Norte_Catatumbo']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Occidente_Ocaña'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Occidente_Ocaña']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Oriente_Metropolitana'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Oriente_Metropolitana']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Suroccidente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Suroccidente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Suroriente_Pamplona'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_NORTE_DE_SANTANDER_Suroriente_Pamplona']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_PUTUMAYO_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_PUTUMAYO_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_QUINDÍO_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_QUINDÍO_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_RISARALDA_Vertiente_Occidental'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_RISARALDA_Vertiente_Occidental']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_RISARALDA_Vertiente_Oriental'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_RISARALDA_Vertiente_Oriental']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_RISARALDA_Vertiente_Pacífico'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_RISARALDA_Vertiente_Pacífico']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_Comunera'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_Comunera']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_García_Rovira'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_García_Rovira']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_Guanenta'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_Guanenta']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_Metropolitana'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_Metropolitana']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_Vélez'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_Vélez']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SANTANDER_Yariguies'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SANTANDER_Yariguies']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_SUCRE_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_SUCRE_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_Ibague'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_Ibague']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_Nevados'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_Nevados']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_TOLIMA_Suroriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_TOLIMA_Suroriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Centro'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Centro']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Norte'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Norte']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Oriente'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Oriente']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Pacífico'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Pacífico']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Sur'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VALLE_DEL_CAUCA_Sur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VAUPÉS_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VAUPÉS_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_CLUSTER_VICHADA_N.A'] !== null ? autolinker.link(String(feature.properties['Num_CLUSTER_VICHADA_N.A']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Corporativo'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Corporativo']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Corporativo__accesos_adicionales'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Corporativo__accesos_adicionales']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Residencial___Estrato_1'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Residencial___Estrato_1']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Residencial___Estrato_2'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Residencial___Estrato_2']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Residencial___Estrato_3'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Residencial___Estrato_3']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Residencial___Estrato_4'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Residencial___Estrato_4']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Residencial___Estrato_5'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Residencial___Estrato_5']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Residencial___Estrato_6'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Residencial___Estrato_6']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Sin_estratificar'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Sin_estratificar']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Num_SEG_Uso_propio_interno_del_operador'] !== null ? autolinker.link(String(feature.properties['Num_SEG_Uso_propio_interno_del_operador']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Num_SEG2_Residencial'] !== null ? autolinker.link(String(feature.properties['Num_SEG2_Residencial']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Num_DEPTO_AMAZONAS'] !== null ? autolinker.link(String(feature.properties['Num_DEPTO_AMAZONAS']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -820,11 +370,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CantAccesosyCalidadcant_accesos_y_calidad_1_0(feature) {
+        function style_AccesosporcluesterNET_1_0(feature) {
             switch(String(feature.properties['Cluster_Predominante'])) {
                 case 'AMAZONAS N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -839,7 +389,7 @@
                     break;
                 case 'ANTIOQUIA Bajo Cauca':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -854,7 +404,7 @@
                     break;
                 case 'ANTIOQUIA Magdalena Medio':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -869,7 +419,7 @@
                     break;
                 case 'ANTIOQUIA Nordeste':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -884,7 +434,7 @@
                     break;
                 case 'ANTIOQUIA Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -899,7 +449,7 @@
                     break;
                 case 'ANTIOQUIA Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -914,7 +464,7 @@
                     break;
                 case 'ANTIOQUIA Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -929,7 +479,7 @@
                     break;
                 case 'ANTIOQUIA Suroeste':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -944,7 +494,7 @@
                     break;
                 case 'ANTIOQUIA Urabá':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -959,7 +509,7 @@
                     break;
                 case 'ANTIOQUIA Valle de Aburrá':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -974,7 +524,7 @@
                     break;
                 case 'ARAUCA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -989,7 +539,7 @@
                     break;
                 case 'ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1004,7 +554,7 @@
                     break;
                 case 'ATLÁNTICO Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1019,7 +569,7 @@
                     break;
                 case 'ATLÁNTICO Costera':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1034,7 +584,7 @@
                     break;
                 case 'ATLÁNTICO Metropolitana':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1049,7 +599,7 @@
                     break;
                 case 'ATLÁNTICO Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1064,7 +614,7 @@
                     break;
                 case 'ATLÁNTICO Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1079,7 +629,7 @@
                     break;
                 case 'BOGOTÁ D.C. Bogotá D.C.':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1094,7 +644,7 @@
                     break;
                 case 'BOLÍVAR Dique':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1109,7 +659,7 @@
                     break;
                 case 'BOLÍVAR Isla de Mompox':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1124,7 +674,7 @@
                     break;
                 case 'BOLÍVAR La Mojana':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1139,7 +689,7 @@
                     break;
                 case 'BOLÍVAR Loba':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1154,7 +704,7 @@
                     break;
                 case 'BOLÍVAR Magdalena Medio':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1169,7 +719,7 @@
                     break;
                 case 'BOLÍVAR Montes de María':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1184,7 +734,7 @@
                     break;
                 case 'BOLÍVAR N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1199,7 +749,7 @@
                     break;
                 case 'BOYACÁ Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1214,7 +764,7 @@
                     break;
                 case 'BOYACÁ Gutiérrez':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1229,7 +779,7 @@
                     break;
                 case 'BOYACÁ La Libertad':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1244,7 +794,7 @@
                     break;
                 case 'BOYACÁ Lengupá':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1259,7 +809,7 @@
                     break;
                 case 'BOYACÁ Márquez':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1274,7 +824,7 @@
                     break;
                 case 'BOYACÁ N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1289,7 +839,7 @@
                     break;
                 case 'BOYACÁ Neira':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1304,7 +854,7 @@
                     break;
                 case 'BOYACÁ Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1319,7 +869,7 @@
                     break;
                 case 'BOYACÁ Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1334,7 +884,7 @@
                     break;
                 case 'BOYACÁ Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1349,7 +899,7 @@
                     break;
                 case 'BOYACÁ Ricaurte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1364,7 +914,7 @@
                     break;
                 case 'BOYACÁ Sugamuxi':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1379,7 +929,7 @@
                     break;
                 case 'BOYACÁ Tundama':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1394,7 +944,7 @@
                     break;
                 case 'BOYACÁ Valderrama':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1409,7 +959,7 @@
                     break;
                 case 'CALDAS Alto Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1424,7 +974,7 @@
                     break;
                 case 'CALDAS Alto Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1439,7 +989,7 @@
                     break;
                 case 'CALDAS Bajo Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1454,7 +1004,7 @@
                     break;
                 case 'CALDAS Centro Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1469,7 +1019,7 @@
                     break;
                 case 'CALDAS Magdalena Caldense':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1484,7 +1034,7 @@
                     break;
                 case 'CALDAS Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1499,7 +1049,7 @@
                     break;
                 case 'CAQUETA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1514,7 +1064,7 @@
                     break;
                 case 'CASANARE N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1529,7 +1079,7 @@
                     break;
                 case 'CAUCA Bota Caucana':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1544,7 +1094,7 @@
                     break;
                 case 'CAUCA Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1559,7 +1109,7 @@
                     break;
                 case 'CAUCA Macizo':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1574,7 +1124,7 @@
                     break;
                 case 'CAUCA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1589,7 +1139,7 @@
                     break;
                 case 'CAUCA Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1604,7 +1154,7 @@
                     break;
                 case 'CAUCA Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1619,7 +1169,7 @@
                     break;
                 case 'CAUCA Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1634,7 +1184,7 @@
                     break;
                 case 'CAUCA Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1649,7 +1199,7 @@
                     break;
                 case 'CESAR N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1664,7 +1214,7 @@
                     break;
                 case 'CHOCÓ N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1679,7 +1229,7 @@
                     break;
                 case 'CÓRDOBA Alto Sinú':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1694,7 +1244,7 @@
                     break;
                 case 'CÓRDOBA Bajo Sinú':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1709,7 +1259,7 @@
                     break;
                 case 'CÓRDOBA Costanera':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1724,7 +1274,7 @@
                     break;
                 case 'CÓRDOBA Medio Sinú':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1739,7 +1289,7 @@
                     break;
                 case 'CÓRDOBA Sabanas':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1754,7 +1304,7 @@
                     break;
                 case 'CÓRDOBA San Jorge':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1769,7 +1319,7 @@
                     break;
                 case 'CUNDINAMARCA Almeidas':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1784,7 +1334,7 @@
                     break;
                 case 'CUNDINAMARCA Alto Magdalena':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1799,7 +1349,7 @@
                     break;
                 case 'CUNDINAMARCA Bajo Magdalena':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1814,7 +1364,7 @@
                     break;
                 case 'CUNDINAMARCA Gualivá':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1829,7 +1379,7 @@
                     break;
                 case 'CUNDINAMARCA Guavio':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1844,7 +1394,7 @@
                     break;
                 case 'CUNDINAMARCA Magdalena Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1859,7 +1409,7 @@
                     break;
                 case 'CUNDINAMARCA Medina':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1874,7 +1424,7 @@
                     break;
                 case 'CUNDINAMARCA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1889,7 +1439,7 @@
                     break;
                 case 'CUNDINAMARCA Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1904,7 +1454,7 @@
                     break;
                 case 'CUNDINAMARCA Rionegro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1919,7 +1469,7 @@
                     break;
                 case 'CUNDINAMARCA Sabana Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1934,7 +1484,7 @@
                     break;
                 case 'CUNDINAMARCA Sabana Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1949,7 +1499,7 @@
                     break;
                 case 'CUNDINAMARCA Soacha':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1964,7 +1514,7 @@
                     break;
                 case 'CUNDINAMARCA Sumapaz':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1979,7 +1529,7 @@
                     break;
                 case 'CUNDINAMARCA Tequendama':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -1994,7 +1544,7 @@
                     break;
                 case 'CUNDINAMARCA Ubaté':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2009,7 +1559,7 @@
                     break;
                 case 'GUAINÍA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2024,7 +1574,7 @@
                     break;
                 case 'GUAVIARE N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2039,7 +1589,7 @@
                     break;
                 case 'HUILA Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2054,7 +1604,7 @@
                     break;
                 case 'HUILA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2069,7 +1619,7 @@
                     break;
                 case 'HUILA Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2084,7 +1634,7 @@
                     break;
                 case 'HUILA Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2099,7 +1649,7 @@
                     break;
                 case 'HUILA Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2114,7 +1664,7 @@
                     break;
                 case 'LA GUAJIRA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2129,7 +1679,7 @@
                     break;
                 case 'MAGDALENA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2144,7 +1694,7 @@
                     break;
                 case 'META N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2159,7 +1709,7 @@
                     break;
                 case 'NARIÑO Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2174,7 +1724,7 @@
                     break;
                 case 'NARIÑO Guambuyaco':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2189,7 +1739,7 @@
                     break;
                 case 'NARIÑO Juanambu':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2204,7 +1754,7 @@
                     break;
                 case 'NARIÑO La Cordillera':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2219,7 +1769,7 @@
                     break;
                 case 'NARIÑO La Sabana':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2234,7 +1784,7 @@
                     break;
                 case 'NARIÑO Los Abades':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2249,7 +1799,7 @@
                     break;
                 case 'NARIÑO N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2264,7 +1814,7 @@
                     break;
                 case 'NARIÑO Obando':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2279,7 +1829,7 @@
                     break;
                 case 'NARIÑO Occidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2294,7 +1844,7 @@
                     break;
                 case 'NARIÑO Pacifico Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2309,7 +1859,7 @@
                     break;
                 case 'NARIÑO Piedemonte Costero':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2324,7 +1874,7 @@
                     break;
                 case 'NARIÑO Rio Mayo':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2339,7 +1889,7 @@
                     break;
                 case 'NARIÑO Sanquianga':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2354,7 +1904,7 @@
                     break;
                 case 'NARIÑO Telembi':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2369,7 +1919,7 @@
                     break;
                 case 'NORTE DE SANTANDER Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2384,7 +1934,7 @@
                     break;
                 case 'NORTE DE SANTANDER Norte (Catatumbo)':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2399,7 +1949,7 @@
                     break;
                 case 'NORTE DE SANTANDER Occidente (Ocaña)':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2414,7 +1964,7 @@
                     break;
                 case 'NORTE DE SANTANDER Oriente (Metropolitana)':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2429,7 +1979,7 @@
                     break;
                 case 'NORTE DE SANTANDER Suroccidente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2444,7 +1994,7 @@
                     break;
                 case 'NORTE DE SANTANDER Suroriente (Pamplona)':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2459,7 +2009,7 @@
                     break;
                 case 'PUTUMAYO N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2474,7 +2024,7 @@
                     break;
                 case 'QUINDÍO N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2489,7 +2039,7 @@
                     break;
                 case 'RISARALDA Vertiente Occidental':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2504,7 +2054,7 @@
                     break;
                 case 'RISARALDA Vertiente Oriental':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2519,7 +2069,7 @@
                     break;
                 case 'RISARALDA Vertiente Pacífico':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2534,7 +2084,7 @@
                     break;
                 case 'SANTANDER Comunera':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2549,7 +2099,7 @@
                     break;
                 case 'SANTANDER García Rovira':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2564,7 +2114,7 @@
                     break;
                 case 'SANTANDER Guanenta':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2579,7 +2129,7 @@
                     break;
                 case 'SANTANDER Metropolitana':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2594,7 +2144,7 @@
                     break;
                 case 'SANTANDER N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2609,7 +2159,7 @@
                     break;
                 case 'SANTANDER Vélez':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2624,7 +2174,7 @@
                     break;
                 case 'SANTANDER Yariguies':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2639,7 +2189,7 @@
                     break;
                 case 'SUCRE N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2654,7 +2204,7 @@
                     break;
                 case 'TOLIMA Ibague':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2669,7 +2219,7 @@
                     break;
                 case 'TOLIMA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2684,7 +2234,7 @@
                     break;
                 case 'TOLIMA Nevados':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2699,7 +2249,7 @@
                     break;
                 case 'TOLIMA Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2714,7 +2264,7 @@
                     break;
                 case 'TOLIMA Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2729,7 +2279,7 @@
                     break;
                 case 'TOLIMA Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2744,7 +2294,7 @@
                     break;
                 case 'TOLIMA Suroriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2759,7 +2309,7 @@
                     break;
                 case 'VALLE DEL CAUCA Centro':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2774,7 +2324,7 @@
                     break;
                 case 'VALLE DEL CAUCA Norte':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2789,7 +2339,7 @@
                     break;
                 case 'VALLE DEL CAUCA Oriente':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2804,7 +2354,7 @@
                     break;
                 case 'VALLE DEL CAUCA Pacífico':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2819,7 +2369,7 @@
                     break;
                 case 'VALLE DEL CAUCA Sur':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2834,7 +2384,7 @@
                     break;
                 case 'VAUPÉS N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2849,7 +2399,7 @@
                     break;
                 case 'VICHADA N.A':
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2864,7 +2414,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
+                pane: 'pane_AccesosporcluesterNET_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.8)',
                 dashArray: '',
@@ -2879,20 +2429,20 @@
                     break;
             }
         }
-        map.createPane('pane_CantAccesosyCalidadcant_accesos_y_calidad_1');
-        map.getPane('pane_CantAccesosyCalidadcant_accesos_y_calidad_1').style.zIndex = 401;
-        map.getPane('pane_CantAccesosyCalidadcant_accesos_y_calidad_1').style['mix-blend-mode'] = 'normal';
-        var layer_CantAccesosyCalidadcant_accesos_y_calidad_1 = new L.geoJson(json_CantAccesosyCalidadcant_accesos_y_calidad_1, {
+        map.createPane('pane_AccesosporcluesterNET_1');
+        map.getPane('pane_AccesosporcluesterNET_1').style.zIndex = 401;
+        map.getPane('pane_AccesosporcluesterNET_1').style['mix-blend-mode'] = 'normal';
+        var layer_AccesosporcluesterNET_1 = new L.geoJson(json_AccesosporcluesterNET_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CantAccesosyCalidadcant_accesos_y_calidad_1',
-            layerName: 'layer_CantAccesosyCalidadcant_accesos_y_calidad_1',
-            pane: 'pane_CantAccesosyCalidadcant_accesos_y_calidad_1',
-            onEachFeature: pop_CantAccesosyCalidadcant_accesos_y_calidad_1,
-            style: style_CantAccesosyCalidadcant_accesos_y_calidad_1_0,
+            dataVar: 'json_AccesosporcluesterNET_1',
+            layerName: 'layer_AccesosporcluesterNET_1',
+            pane: 'pane_AccesosporcluesterNET_1',
+            onEachFeature: pop_AccesosporcluesterNET_1,
+            style: style_AccesosporcluesterNET_1_0,
         });
-        bounds_group.addLayer(layer_CantAccesosyCalidadcant_accesos_y_calidad_1);
-        map.addLayer(layer_CantAccesosyCalidadcant_accesos_y_calidad_1);
+        bounds_group.addLayer(layer_AccesosporcluesterNET_1);
+        map.addLayer(layer_AccesosporcluesterNET_1);
         setBounds();
         </script>        
     
@@ -2963,7 +2513,6 @@
 .f-titulo:first-child { margin-top:0; }
 .f-seccion { border-bottom:1px solid #eee; padding-bottom:8px; }
 
-/* Sección departamento: scroll propio para no alargar demasiado el panel */
 .f-seccion-scroll {
   border-bottom:1px solid #eee; padding-bottom:8px;
 }
@@ -2989,19 +2538,35 @@
   border-top:1px solid #eee; padding-top:7px; color:#666;
 }
 
-/* ── PANEL RESUMEN INFERIOR IZQUIERDO ────────────────────────────── */
+/* ── PANEL RESUMEN MINIMIZABLE ──────────────────────────────────── */
 #resumen-panel {
   position:absolute; bottom:20px; left:20px; z-index:1001;
   background:white; border-radius:10px;
   box-shadow:0 2px 12px rgba(0,0,0,.25); border:1px solid #e0e0e0;
-  font-family:sans-serif; font-size:12px; min-width:220px;
-  overflow:hidden;
+  font-family:sans-serif; font-size:12px;
+  transition: transform .3s ease;
 }
 #resumen-header {
   background:linear-gradient(135deg,#1565C0,#1976D2);
   color:white; padding:8px 12px; font-weight:bold; font-size:12px;
+  display:flex; justify-content:space-between; align-items:center;
+  cursor:pointer; user-select:none;
 }
-#resumen-body { padding:10px 12px; }
+#resumen-toggle {
+  background:rgba(255,255,255,.2); border:none; color:white;
+  border-radius:4px; padding:2px 8px; cursor:pointer; font-size:14px;
+  transition:background .2s;
+}
+#resumen-toggle:hover { background:rgba(255,255,255,.3); }
+
+#resumen-body {
+  padding:10px 12px; max-height:300px; overflow:hidden;
+  transition:max-height .3s ease, padding .3s ease;
+}
+#resumen-panel.minimizado #resumen-body {
+  max-height:0; padding:0 12px;
+}
+
 .r-fila {
   display:flex; justify-content:space-between; align-items:center;
   padding:4px 0; border-bottom:1px solid #f5f5f5;
@@ -3009,11 +2574,14 @@
 .r-fila:last-child { border-bottom:none; }
 .r-label { color:#555; }
 .r-valor { font-weight:bold; color:#1976D2; }
+
 #resumen-nota {
   font-size:10px; color:#999; text-align:center;
   padding:5px 12px 8px; border-top:1px solid #f0f0f0;
   font-style:italic;
+  transition:opacity .3s ease;
 }
+#resumen-panel.minimizado #resumen-nota { display:none; }
 
 /* ── POPUPS ──────────────────────────────────────────────────────── */
 .leaflet-popup-content-wrapper {
@@ -3026,6 +2594,10 @@
   max-height:600px; overflow-y:auto;
 }
 
+/* Items de empresa en popup - ocultables dinámicamente */
+.empresa-item { transition: opacity .2s; }
+.empresa-item.filtrado-oculto { display:none !important; }
+
 /* ── RESPONSIVE ──────────────────────────────────────────────────── */
 @media(max-width:600px){
   .map-title-card { left:10px; width:calc(100% - 130px); padding:4px 8px; }
@@ -3034,7 +2606,7 @@
   #input-buscar  { width:100%; }
   #resultados-b  { right:10px; left:10px; max-width:none; }
   #filtros-panel { width:calc(100% - 50px); right:25px; bottom:80px; }
-  #resumen-panel { left:10px; bottom:80px; min-width:180px; }
+  #resumen-panel { left:10px; bottom:80px; }
   .leaflet-popup-content-wrapper,
   .leaflet-popup-content { min-width:300px!important; max-width:320px!important; }
 }
@@ -3074,16 +2646,19 @@
   </div>
 </div>
 
-<!-- PANEL RESUMEN -->
+<!-- PANEL RESUMEN MINIMIZABLE -->
 <div id="resumen-panel">
-  <div id="resumen-header">📊 Resumen de municipios visibles</div>
+  <div id="resumen-header">
+    <span>📊 Resumen</span>
+    <button id="resumen-toggle" title="Minimizar/Expandir">▼</button>
+  </div>
   <div id="resumen-body">
     <div class="r-fila">
       <span class="r-label">🏙️ Municipios</span>
       <span class="r-valor" id="r-municipios">–</span>
     </div>
     <div class="r-fila">
-      <span class="r-label">🏢 Empresas únicas</span>
+      <span class="r-label">🏢 Empresas líd.</span>
       <span class="r-valor" id="r-empresas">–</span>
     </div>
     <div class="r-fila">
@@ -3107,50 +2682,53 @@
       <span class="r-valor" id="r-latencia">–</span>
     </div>
   </div>
-  <div id="resumen-nota">Se actualiza con los filtros activos</div>
+  <div id="resumen-nota">Se actualiza con los filtros</div>
 </div>
 
 <script id="mejora-script">
 (function(){
 
-/* =======================================================================
-   SECCIONES DE FILTROS
-   Cada sección lee columnas Num_<PREFIJO>_<sufijo_exacto> del GeoJSON.
-   El checkbox guarda el sufijo exacto → búsqueda directa sin reconstruir.
-   ======================================================================= */
+/* ═══════════════════════════════════════════════════════════════════
+   CONFIGURACIÓN DE FILTROS
+   
+   Filtros activos en v2.4:
+     - Tipo de Empresa (TIPO EMPRESA)
+     - Tecnología (TIPO TECNOLOGIA 2) → 3 valores: FTTH, HFC, OTRAS
+     - Segmento (SEGMENTO2) → 3 valores: Residencial, Corporativo, Otro
+     - Plaza (del shapefile)
+     - Departamento (33 valores, con scroll)
+   
+   Se eliminaron: Rango de Tamaño y Categoría
+   ═══════════════════════════════════════════════════════════════════ */
+
 var SECCIONES = [
-  { prefijo:'Num_RANGO_',  clase:'chk-rango', label:'📏 Por Rango de Tamaño', scroll:false },
-  { prefijo:'Num_TIPO_',   clase:'chk-tipo',  label:'🏢 Por Tipo de Empresa',  scroll:false },
-  { prefijo:'Num_CAT_',    clase:'chk-cat',   label:'⭐ Por Categoría',         scroll:false },
-  { prefijo:'Num_PLAZA_',  clase:'chk-plaza', label:'🏙️ Por Plaza',            scroll:false },
-  { prefijo:'Num_DEPTO_',  clase:'chk-depto', label:'🗺️ Por Departamento',    scroll:true  },
+  { prefijo:'Num_TIPO_',  clase:'chk-tipo',  label:'🏢 Por Tipo de Empresa',  scroll:false },
+  { prefijo:'Num_TEC_',   clase:'chk-tec',   label:'🔧 Por Tecnología',       scroll:false },
+  { prefijo:'Num_SEG2_',  clase:'chk-seg2',  label:'📂 Por Segmento',         scroll:false },
+  { prefijo:'Num_PLAZA_', clase:'chk-plaza', label:'🏙️ Por Plaza',            scroll:false },
+  { prefijo:'Num_DEPTO_', clase:'chk-depto', label:'🗺️ Por Departamento',    scroll:true  },
 ];
 
-/* Formatea números grandes: 1234567 → "1.234.567" */
-function fmtNum(n){
-  return Math.round(n).toLocaleString('es-CO');
-}
+function fmtNum(n){ return Math.round(n).toLocaleString('es-CO'); }
+
+// Variable global para guardar el estado de los filtros activos
+var filtrosActivos = {};
 
 function init(){
-  var capa = window['layer_CantAccesosyCalidadcant_accesos_y_calidad_1'];
+  var capa = window['layer_AccesosporcluesterNET_1'];
   if(!capa){ setTimeout(init, 500); return; }
-  console.log('✓ mapa clusters v2.3');
 
-  /* ── 1. ÍNDICE GLOBAL ───────────────────────────────────────────── */
-  var indice = [];   // para buscador y resumen
-
+  /* ── 1. ÍNDICE ────────────────────────────────────────────────── */
+  var indice = [];
   capa.eachLayer(function(l){
     if(!l.feature) return;
     var p = l.feature.properties;
-
-    // Extraer nombres de empresa del HTML del popup
     var empresas = [];
     var re = /font-weight:bold[^>]*>\s*[🔴🟠🟡🟢🔵⚪🟣⚫]\s*([^<]+)</g, m;
     var popH = p['Popup_HTML'] || '';
     while((m = re.exec(popH)) !== null){
       var n = m[1].trim(); if(n) empresas.push(n);
     }
-
     indice.push({
       mun:   (p['MUNICIPIO']    || '').toUpperCase(),
       dep:   (p['DEPARTAMENTO'] || '').toUpperCase(),
@@ -3158,11 +2736,10 @@ function init(){
       emps:  empresas,
       layer: l,
       props: p,
-      visible: true,
     });
   });
 
-  /* ── 2. POPUPS + HOVER ──────────────────────────────────────────── */
+  /* ── 2. POPUPS + HOVER ───────────────────────────────────────── */
   capa.eachLayer(function(l){
     if(!l.feature) return;
     var p = l.feature.properties;
@@ -3171,6 +2748,12 @@ function init(){
                   .replace('N/A (dato del shapefile)', plaza)
                   .replace('{Plaza}', plaza);
     l.bindPopup(html, { maxWidth:360, minWidth:340 });
+    
+    // Actualizar popup cuando se abre
+    l.on('popupopen', function(){
+      actualizarPopupDinamico(l);
+    });
+    
     l.on('mouseover', function(){
       if(this.options.interactive)
         this.setStyle({ color:'#FFD700', weight:3, fillOpacity:.85 });
@@ -3178,11 +2761,7 @@ function init(){
     l.on('mouseout', function(){ capa.resetStyle(this); });
   });
 
-  /* ── 3. CONSTRUIR PANEL DE FILTROS DINÁMICO ─────────────────────── */
-  /*
-     Lee todos los features para descubrir qué sufijos existen en cada
-     sección. Solo muestra valores que tienen al menos 1 municipio.
-  */
+  /* ── 3. CONSTRUIR PANEL FILTROS ─────────────────────────────── */
   var sufijos = {};
   SECCIONES.forEach(function(s){ sufijos[s.prefijo] = new Set(); });
 
@@ -3199,11 +2778,8 @@ function init(){
   SECCIONES.forEach(function(s){
     var vals = Array.from(sufijos[s.prefijo]).sort();
     if(!vals.length) return;
-
     var wrapperTag   = s.scroll ? 'f-seccion-scroll' : 'f-seccion';
-    var innerOpenTag = s.scroll
-      ? '<div class="f-scroll-inner">'
-      : '';
+    var innerOpenTag = s.scroll ? '<div class="f-scroll-inner">' : '';
     var innerCloseTag = s.scroll ? '</div>' : '';
 
     panelHTML += '<div class="' + wrapperTag + '">';
@@ -3224,7 +2800,7 @@ function init(){
   });
   document.getElementById('filtros-contenido').innerHTML = panelHTML;
 
-  /* ── 4. TOGGLE FILTROS ──────────────────────────────────────────── */
+  /* ── 4. TOGGLE FILTROS ──────────────────────────────────────── */
   var btnT  = document.getElementById('toggle-filtros');
   var panel = document.getElementById('filtros-panel');
 
@@ -3234,7 +2810,23 @@ function init(){
     btnT.innerText = panel.classList.contains('oculto') ? '🔍' : '✖';
   };
 
-  /* ── 5. CERRAR PANEL AL CLICKEAR FUERA ─────────────────────────── */
+  /* ── 5. TOGGLE RESUMEN ──────────────────────────────────────── */
+  var resumenPanel  = document.getElementById('resumen-panel');
+  var resumenToggle = document.getElementById('resumen-toggle');
+  var resumenHeader = document.getElementById('resumen-header');
+
+  if(window.innerWidth < 600){
+    resumenPanel.classList.add('minimizado');
+    resumenToggle.innerText = '▲';
+  }
+
+  resumenHeader.onclick = function(e){
+    e.stopPropagation();
+    resumenPanel.classList.toggle('minimizado');
+    resumenToggle.innerText = resumenPanel.classList.contains('minimizado') ? '▲' : '▼';
+  };
+
+  /* ── 6. CERRAR PANEL AL CLICKEAR FUERA ─────────────────────── */
   document.addEventListener('click', function(e){
     if(!panel.classList.contains('oculto')){
       if(!panel.contains(e.target) && e.target !== btnT){
@@ -3244,7 +2836,7 @@ function init(){
     }
   });
 
-  /* ── 6. LÓGICA DE CHECKBOXES ────────────────────────────────────── */
+  /* ── 7. LÓGICA CHECKBOXES ───────────────────────────────────── */
   function bindGroup(clase){
     var cbTodos = document.querySelector('.' + clase + '[value="__todos__"]');
     var cbInds  = document.querySelectorAll('.' + clase + ':not([value="__todos__"])');
@@ -3261,31 +2853,107 @@ function init(){
   }
   SECCIONES.forEach(function(s){ bindGroup(s.clase); });
 
-  /* ── 7. FUNCIÓN OBTENER SELECCIONADOS ───────────────────────────── */
+  /* ── 8. FUNCIÓN SELECCIONADOS ───────────────────────────────── */
   function seleccionados(clase){
     var cbTodos = document.querySelector('.' + clase + '[value="__todos__"]');
-    if(cbTodos && cbTodos.checked) return null;   // null = sin filtro
+    if(cbTodos && cbTodos.checked) return null;
     var r = [];
     document.querySelectorAll('.' + clase + ':checked')
       .forEach(function(c){ r.push(c.value); });
     return r.length ? r : null;
   }
 
-  /* ── 8. APLICAR FILTROS + ACTUALIZAR RESUMEN ────────────────────── */
+  /* ── 9. ACTUALIZAR POPUP DINÁMICO ───────────────────────────── */
+  function actualizarPopupDinamico(layer){
+    var popup = layer.getPopup();
+    if(!popup) return;
+    
+    var container = popup.getElement();
+    if(!container) return;
+    
+    // Obtener todas las empresas del municipio
+    var empresasItems = container.querySelectorAll('.empresa-item');
+    
+    // Filtrar empresas según filtros activos
+    var empresasVisibles = [];
+    empresasItems.forEach(function(item){
+      var tipo  = item.getAttribute('data-tipo');
+      var tec   = item.getAttribute('data-tec');
+      var seg2  = item.getAttribute('data-seg2');
+      var accesos = parseInt(item.getAttribute('data-accesos')) || 0;
+      
+      var visible = true;
+      
+      // Aplicar filtros
+      if(filtrosActivos.tipo && filtrosActivos.tipo.length){
+        if(!filtrosActivos.tipo.some(function(v){ return tipo.includes(v.replace(/_/g,' ')); }))
+          visible = false;
+      }
+      if(filtrosActivos.tec && filtrosActivos.tec.length){
+        if(!filtrosActivos.tec.includes(tec))
+          visible = false;
+      }
+      if(filtrosActivos.seg2 && filtrosActivos.seg2.length){
+        if(!filtrosActivos.seg2.includes(seg2))
+          visible = false;
+      }
+      
+      if(visible){
+        item.classList.remove('filtrado-oculto');
+        empresasVisibles.push({
+          nombre: item.getAttribute('data-empresa'),
+          accesos: accesos,
+          item: item
+        });
+      } else {
+        item.classList.add('filtrado-oculto');
+      }
+    });
+    
+    // Actualizar contador de empresas
+    var contadorEls = container.querySelectorAll('.popup-count-empresas');
+    contadorEls.forEach(function(el){ el.innerText = empresasVisibles.length; });
+    
+    var numEmpsEls = container.querySelectorAll('.popup-num-empresas');
+    numEmpsEls.forEach(function(el){ el.innerText = empresasVisibles.length; });
+    
+    // Recalcular empresa líder (la que más accesos tiene entre las visibles)
+    if(empresasVisibles.length > 0){
+      empresasVisibles.sort(function(a,b){ return b.accesos - a.accesos; });
+      var lider = empresasVisibles[0];
+      
+      var liderNombreEls = container.querySelectorAll('.popup-empresa-lider');
+      liderNombreEls.forEach(function(el){ el.innerText = lider.nombre; });
+      
+      var liderAccesosEls = container.querySelectorAll('.popup-accesos-lider');
+      liderAccesosEls.forEach(function(el){ el.innerText = fmtNum(lider.accesos); });
+    }
+    
+    // Recalcular totales del municipio (solo de empresas visibles)
+    var totalAccesos = 0;
+    empresasVisibles.forEach(function(e){ totalAccesos += e.accesos; });
+    
+    var accTotalesEls = container.querySelectorAll('.popup-accesos-totales');
+    accTotalesEls.forEach(function(el){ el.innerText = fmtNum(totalAccesos); });
+  }
+
+  /* ── 10. APLICAR FILTROS + ACTUALIZAR RESUMEN ──────────────── */
   function aplicar(){
     var filtros = SECCIONES.map(function(s){
-      return { prefijo: s.prefijo, valores: seleccionados(s.clase) };
+      return { prefijo: s.prefijo, valores: seleccionados(s.clase), clase: s.clase };
     });
+    
+    // Guardar filtros activos globalmente para los popups
+    filtrosActivos = {
+      tipo:  seleccionados('chk-tipo'),
+      tec:   seleccionados('chk-tec'),
+      seg2:  seleccionados('chk-seg2'),
+      plaza: seleccionados('chk-plaza'),
+      depto: seleccionados('chk-depto'),
+    };
 
-    // Acumuladores para el panel resumen
-    var cntMun     = 0;
-    var setEmps    = new Set();
-    var sumAcc     = 0;
-    var sumFtth    = 0;
-    var sumFibra   = 0;      // para promedio de Porc_Fibra
-    var sumVelDown = 0;
-    var sumLat     = 0;
-    var cntLat     = 0;      // solo municipios con latencia
+    var cntMun=0, setEmps=new Set(), sumAcc=0, sumFtth=0, sumFibra=0;
+    var sumVelDown=0, sumLat=0, cntLat=0;
 
     capa.eachLayer(function(l){
       if(!l.feature) return;
@@ -3304,37 +2972,31 @@ function init(){
         l.setStyle({ fillOpacity:.7, opacity:1, stroke:true });
         l.options.interactive = true;
         if(l.getElement()){
-          l.getElement().style.display       = '';
+          l.getElement().style.display = '';
           l.getElement().style.pointerEvents = '';
         }
-        // Acumular métricas
         cntMun++;
         sumAcc     += (p['Accesos_Totales']   || 0);
         sumFtth    += (p['Accesos_Fibra']     || 0);
         sumFibra   += (p['Porc_Fibra']        || 0);
         sumVelDown += (p['Vel_Down_Promedio'] || 0);
-        var lat     = parseFloat(p['Latencia_Promedio']);
+        var lat = parseFloat(p['Latencia_Promedio']);
         if(!isNaN(lat)){ sumLat += lat; cntLat++; }
-        // Empresas únicas: leer Empresa_Lider como proxy rápido
-        // (el campo exacto de empresas no está disponible directamente)
         var emp = p['Empresa_Lider'];
         if(emp) setEmps.add(emp);
       } else {
         l.setStyle({ fillOpacity:0, opacity:0, stroke:false });
         l.options.interactive = false;
         if(l.getElement()){
-          l.getElement().style.display       = 'none';
+          l.getElement().style.display = 'none';
           l.getElement().style.pointerEvents = 'none';
         }
       }
     });
 
-    // Actualizar contador del panel filtros
     document.getElementById('num-visible').innerText = cntMun;
-
-    // Actualizar panel resumen
     document.getElementById('r-municipios').innerText = cntMun;
-    document.getElementById('r-empresas').innerText   = setEmps.size + ' líd.';
+    document.getElementById('r-empresas').innerText   = setEmps.size;
     document.getElementById('r-accesos').innerText    = fmtNum(sumAcc);
     document.getElementById('r-ftth').innerText       = fmtNum(sumFtth);
     document.getElementById('r-fibra').innerText      =
@@ -3344,14 +3006,20 @@ function init(){
     document.getElementById('r-latencia').innerText   =
       cntLat ? (sumLat / cntLat).toFixed(1) + ' ms' : 'N/D';
 
-    // Auto-cerrar panel en móvil
     if(window.innerWidth < 600) panel.classList.add('oculto');
+    
+    // Actualizar popup abierto si existe
+    capa.eachLayer(function(l){
+      if(l.getPopup() && l.getPopup().isOpen()){
+        actualizarPopupDinamico(l);
+      }
+    });
   }
 
   document.getElementById('btn-aplicar').onclick = aplicar;
-  aplicar();  // ejecutar al cargar con filtros por defecto (todos visibles)
+  aplicar();
 
-  /* ── 9. BUSCADOR ─────────────────────────────────────────────────── */
+  /* ── 11. BUSCADOR ───────────────────────────────────────────── */
   var inputB = document.getElementById('input-buscar');
   var divRes = document.getElementById('resultados-b');
   var btnClr = document.getElementById('btn-clear-b');
@@ -3361,8 +3029,7 @@ function init(){
     if(q.length < 2){ divRes.style.display = 'none'; return; }
 
     var res = indice.filter(function(item){
-      return item.mun.includes(q)   ||
-             item.dep.includes(q)   ||
+      return item.mun.includes(q) || item.dep.includes(q) ||
              item.plaza.includes(q) ||
              item.emps.some(function(e){ return e.toUpperCase().includes(q); });
     }).slice(0, 12);
@@ -3389,7 +3056,7 @@ function init(){
         '<div class="res-nombre">' + item.mun + '</div>' +
         '<div class="res-sub">'   + sub       + '</div></div>';
     });
-    divRes.innerHTML    = html;
+    divRes.innerHTML = html;
     divRes.style.display = 'block';
 
     divRes.querySelectorAll('.res-item').forEach(function(el){
@@ -3406,7 +3073,6 @@ function init(){
     });
   });
 
-  // Cerrar resultados al clickear fuera
   document.addEventListener('click', function(e){
     if(!inputB.contains(e.target) && !divRes.contains(e.target))
       divRes.style.display = 'none';
